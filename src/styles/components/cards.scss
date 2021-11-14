@@ -1,0 +1,90 @@
+// the card component container
+.card__content {
+    width: 100%;
+    height: auto ;
+    padding-top : 30px ;
+    padding-bottom: 30px;
+    // this will be applied to the card number 1 and 3
+    .card:nth-child(1) , .card:nth-child(4){
+        // give them a width of 20% of the width of screen - 15px
+        width: calc(25% - 15px);
+    }
+    // where we have two cards one next to other
+    .card + .card {
+        // add a margin to the left of 30px
+          margin-left: 30px  ;
+
+        // this will be applied if the screen less then 768px
+        @media only screen and (max-width: 768px) {
+                margin-left: 30px   ;
+                // & is equal to " .card + .card "
+                // we target the third card
+
+                &:nth-child(3) {
+                    margin-left: 0px   ;
+                }
+
+        }
+        // the same for the screen less then 375px on width
+        @media only screen and (max-width: 375px) {
+                 margin-left: 0px   ;
+            &:nth-child(3) {
+                margin-left: 0px   ;
+            }
+        }
+      }
+
+
+
+
+    // the card style
+    .card {
+        // give it a width of 20% of screen width - 30px
+        width: calc(25% - 30px);
+        height: auto;
+        border-radius: 10px;
+        // give it a border
+        border: 2px solid #6AA84F;
+        padding: 30px;
+        background-color: var(--color-black);
+        // move all the card to left
+        // you can read more about this from internet to see image of what i mean because it's very hard to explain here
+        float: left;
+
+
+        // applied if the screen width is less then 768px
+        @media only screen and (max-width: 768px) {
+            // give it a width of 50% of screen width - 15px
+            width: calc(50% - 15px) ;
+
+
+            // & : is equal to .card here
+            // this for the first and 4th cards
+            &:nth-child(1) , &:nth-child(4){
+                // give it a width of 50% of screen width - 15px
+                width: calc(50% - 15px);
+            }
+        }
+
+
+        // applied when the screen width is less then 375px
+        @media only screen and (max-width: 375px) {
+            // the cards width will be 100%
+            width: calc(100% );
+            &:nth-child(1) , &:nth-child(4) , {
+                // the width of the 1 and 4 cards will be also 100%
+                width: calc(100% );
+            }
+        }
+
+
+// style the text
+        h6 {
+            text-align: center;
+            font-size: 20px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.image__content {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 14.2% [col-start]);
+    grid-template-rows: repeat(4, 25% [row-start]);
+    background-color: var(--color-black);
+    img:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 5 ;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    img:nth-child(2) {
+        grid-column-start: 5;
+        grid-column-end: 8 ;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}

@@ -1,0 +1,47 @@
+
+// first question
+
+
+// the container style
+.calendar {
+    // display content as a grid
+    display: grid;
+    // shrink the grid to 7 columns , each one have 14.2% of the width
+    grid-template-columns: repeat(7, 14.2% [col-start]);
+    background-color: var(--color-black);
+    // add a padding to the calendar
+    padding: 10px;
+    // the header style
+
+
+    header {
+        // display the content as a grid
+        // i add this just to make the "decembre" and "2021" on the center
+            display: grid;
+            place-items: center ;
+        // the calendar is a big grid , so i put the header on the first cell and give it the width of the screen
+        // the cell will start from the 1 point to the 8th point
+            grid-column-start: 1;
+            grid-column-end: 8 ;
+
+    }
+    .day {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        // the border of the day cell
+        // --color-primary is a variable that content a green color
+        border: 1px solid var(--color-primary);
+        height: auto;
+    }
+    // the cells that content the month numbers
+    .number {
+        height: 80px;
+        border: 1px solid var(--color-primary);
+        text-align: right;
+    }
+    // style for the empty cells
+    .empty {
+        background-color: var(--color-primary);
+    }
+}

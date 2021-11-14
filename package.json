@@ -1,0 +1,64 @@
+{
+  "name": "timtools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Stack de développement frontend",
+  "author": {
+    "name": "Matt et JF"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.26.7",
+    "cross-env": "^5.2.0",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-if": "^3.0.0",
+    "gulp-jsbeautifier": "^3.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-notifier": "^10.0.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.43.4",
+    "webpack": "^4.38.0",
+    "webpack-notifier": "^1.8.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "swiper": "^7.2.0"
+  }
+}

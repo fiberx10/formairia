@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Travail pratique #2 - CW3</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="swiper-bundle.css">
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="wrapper">
+                <h1>Travail Pratique #02</h1>
+            </div>
+        </header>
+        <section class="question question-1">
+            <div class="wrapper">
+                <header class="question__header">
+                    <h2>Question #1 - CSS</h2>
+                    <p>
+                        Un calendrier en CSS Grid.
+                        <i>Vous ne devez pas changer la structure du html</i>
+                    </p>
+                </header>
+                <div class="question__content">
+
+
+                    <div class="calendar">
+                        <header>
+                            <h1>Décembre</h1>
+                            <p>2021</p>
+                        </header>
+                        <div class="day">Lundi</div>
+                        <div class="day">Mardi</div>
+                        <div class="day">Mercredi</div>
+                        <div class="day">Jeudi</div>
+                        <div class="day">Vendredi</div>
+                        <div class="day">Samedi</div>
+                        <div class="day">Dimanche</div>
+                        <div class="number empty"></div>
+                        <div class="number empty"></div>
+                        <div class="number num1">
+                            <p>1</p>
+                        </div>
+                        <div class="number">
+                            <p>2</p>
+                        </div>
+                        <div class="number">
+                            <p>3</p>
+                        </div>
+                        <div class="number">
+                            <p>4</p>
+                        </div>
+                        <div class="number">
+                            <p>5</p>
+                        </div>
+                        <div class="number">
+                            <p>6</p>
+                        </div>
+                        <div class="number">
+                            <p>7</p>
+                        </div>
+                        <div class="number">
+                            <p>8</p>
+                        </div>
+                        <div class="number">
+                            <p>9</p>
+                        </div>
+                        <div class="number">
+                            <p>10</p>
+                        </div>
+                        <div class="number">
+                            <p>11</p>
+                        </div>
+                        <div class="number">
+                            <p>12</p>
+                        </div>
+                        <div class="number">
+                            <p>13</p>
+                        </div>
+                        <div class="number">
+                            <p>14</p>
+                        </div>
+                        <div class="number">
+                            <p>15</p>
+                        </div>
+                        <div class="number">
+                            <p>16</p>
+                        </div>
+                        <div class="number">
+                            <p>17</p>
+                        </div>
+                        <div class="number">
+                            <p>18</p>
+                        </div>
+                        <div class="number">
+                            <p>19</p>
+                        </div>
+                        <div class="number">
+                            <p>20</p>
+                        </div>
+                        <div class="number">
+                            <p>21</p>
+                        </div>
+                        <div class="number">
+                            <p>22</p>
+                        </div>
+                        <div class="number">
+                            <p>23</p>
+                        </div>
+                        <div class="number">
+                            <p>24</p>
+                        </div>
+                        <div class="number">
+                            <p>25</p>
+                        </div>
+                        <div class="number">
+                            <p>26</p>
+                        </div>
+                        <div class="number">
+                            <p>27</p>
+                        </div>
+                        <div class="number">
+                            <p>28</p>
+                        </div>
+                        <div class="number">
+                            <p>29</p>
+                        </div>
+                        <div class="number">
+                            <p>30</p>
+                        </div>
+                        <div class="number">
+                            <p>31</p>
+                        </div>
+                        <div class="number empty">
+                            <p></p>
+                        </div>
+                        <div class="number empty">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="question question-2">
+            <div class="wrapper">
+                <header class="question__header">
+                    <h2>Question #2 - JavaScript</h2>
+                    <p>Ajouter un titre dynamiquement</p>
+                    <div class="rules">
+                        <p>Lorsqu'on clique sur le bouton:</p>
+                        <ul>
+                            <li>La balise qui s'ajoute est un h3</li>
+                            <li>Le texte du titre doit être un nom aélatoire entre Jean-François, Jean-Sébastien, Marie-France et Matthieu(indice Tableau)</li>
+                            <li>Le titre doit être ajouté dans le div .title_holder</li>
+                            <li>Doit apparaitre dans une position alétoire sur l'axe horizontal et vertical</li>
+                            <li>Vous pouvez ajouter un identifiant sur votre bouton dans le html</li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="question__content">
+                    <button id="addrandomtext">Ajouter un titre</button>
+                    <div class="title_holder"></div>
+                </div>
+            </div>
+        </section>
+        <section class="question question-3">
+            <div class="wrapper">
+                <header class="question__header">
+                    <h2>Question #3 - CSS</h2>
+                    <p>Le responsive</p>
+                    <div class="rules">
+                        <p>Vous devez faire la mise en page en colonne qui s’adapte au différente résolution</p>
+                        <ul>
+                            <li>4 colonnes par défaut</li>
+                            <li>2 colonnes lorsque la résolution est de 768</li>
+                            <li>1 colonne lorsque la résolution est de 375</li>
+                            <li>N'oubliez pas que nos mises en page devraient être fonctionnelle peut importe la résolation</li>
+                            <li>Vous devez faire la bonne gestion de l'espacement sur les côtés du site, lorsque la résolution est plus petite</li>
+                            <li>Dans chacune des cartes il y a une image, vous devez choisir le bon format(il y a deja les 3 formats dans le dossier assets)</li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="question__content">
+                    <div class="card__content">
+                        <!-- Votre CODE ici! -->
+
+                        <!-- my code --------------->
+
+                        <div class="card">
+                            <img src="./assets/images/photo1.svg">
+                            <h6>
+                                TITLE DE CARTE
+                            </h6>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/images/photo2.svg">
+                            <h6>
+                                TITLE DE CARTE
+                            </h6>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/images/photo3.svg">
+                            <h6>
+                                TITLE DE CARTE
+                            </h6>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/images/photo4.svg">
+                            <h6>
+                                TITLE DE CARTE
+                            </h6>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="question question-4">
+            <div class="wrapper">
+                <header class="question__header">
+                    <h2>Question #4 - Javascript</h2>
+                    <p>Créer une carrousel</p>
+                    <div class="rules">
+                        <p>Voici les consignes</p>
+                        <ul>
+                            <li>Par défaut, il doit y avoir 3 slide de visible à la fois. Vous devez utiliser les images caroussel.jpg(1 à 5)</li>
+                            <li>
+                                Trouver comment faire dans la documentation
+                                <ul>
+                                    <li>Faire en sorte qu'il y ait 1 images en mobile</li>
+                                    <li>Faire en sorte qu'il y ait 2 images en 768px</li>
+                                    <li>Faire en sorte qu'il y ait 3 images à partir de 1000px</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="question__content">
+                    <!-- Votre CODE ici! -->
+
+                    <div class="swiper">
+
+                        <div class="swiper-wrapper">
+
+
+                            <div class="swiper-slide"><img src="assets/images/carousel1.jpg"></div>
+                            <div class="swiper-slide"><img src="assets/images/carousel3.jpg"></div>
+                            <div class="swiper-slide"><img src="assets/images/carousel2.jpg"></div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="question question-5">
+            <div class="wrapper">
+                <header class="question__header">
+                    <h2>Question #5 - CSS</h2>
+                    <p>CSS grid</p>
+                    <div class="rules">
+                        <p>Recréer la mise en page</p>
+                    </div>
+                </header>
+                <div class="question__content">
+                    <div class="image__content">
+                        <img src="assets/images/carousel1.jpg" alt="" />
+                        <img src="assets/images/carousel2.jpg" alt="" />
+                        <img src="assets/images/carousel3.jpg" alt="" />
+                        <img src="assets/images/carousel4.jpg" alt="" />
+                        <img src="assets/images/carousel5.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
